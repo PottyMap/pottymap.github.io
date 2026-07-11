@@ -81,13 +81,12 @@ a { color: var(--green-dark); }
   color: var(--ink);
   text-decoration: none;
 }
-/* Logo placeholder — swap for an <img> when a logo exists */
+/* Brand logo (PottyMap mark) */
 .logo-mark {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: var(--green-soft);
-  border: 1px dashed var(--green);
+  object-fit: contain;
 }
 .nav {
   display: flex;

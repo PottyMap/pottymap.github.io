@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2f9e44" />
+  <script>document.documentElement.classList.add('js');</script>
   <title>Support — PottyMap</title>
   <meta name="description" content="Get help with PottyMap. FAQs and how to reach us." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -64,13 +69,25 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <span>© 2026 PottyMap</span>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <img class="logo-mark" src="images/logo.png" alt="" aria-hidden="true" />
+          PottyMap
+        </a>
+        <p class="footer-tag">Claim the neighborhood, one walk at a time.</p>
       </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 PottyMap</span>
+      <span class="footer-made">Made for dogs &amp; their humans 🐾</span>
     </div>
   </footer>
+  <script src="main.js" defer></script>
 </body>
 </html>

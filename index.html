@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2f9e44" />
+  <script>document.documentElement.classList.add('js');</script>
   <title>PottyMap — Claim the neighborhood, one walk at a time</title>
   <meta name="description" content="PottyMap turns dog walks into a game. Track your routes, claim territory, share with the community, and earn rewards." />
   <meta property="og:title" content="PottyMap" />
@@ -11,6 +13,9 @@
   <meta property="og:image" content="https://pottymap.github.io/images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -41,13 +46,20 @@
             <a class="btn btn-ghost" href="support.html">Get support</a>
           </div>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual reveal">
+          <svg class="hero-accent hero-accent--pin" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+          </svg>
+          <svg class="hero-accent hero-accent--paw" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="20" cy="17" r="7"/><circle cx="44" cy="17" r="7"/><circle cx="9" cy="33" r="6"/><circle cx="55" cy="33" r="6"/>
+            <path d="M32 30c-9 0-16 7-16 14 0 6 6 8.5 16 8.5S48 50 48 44c0-7-7-14-16-14z"/>
+          </svg>
           <div class="phone-row">
             <div class="phone phone-back">
-              <img src="images/profile-photos.jpg" alt="A PottyMap profile with a dog's photos, territories, and walk history" />
+              <img src="images/app-profile.jpg" width="314" height="680" alt="A PottyMap dog profile with badges, territory, and walk memories" />
             </div>
             <div class="phone phone-front">
-              <img src="images/community-feed.png" alt="PottyMap community feed showing walk photos shared by nearby dogs" />
+              <img src="images/app-social.jpg" width="314" height="680" alt="The PottyMap community feed with the new one-tap post button" />
             </div>
           </div>
         </div>
@@ -57,12 +69,12 @@
     <!-- FEATURES -->
     <section id="features">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <span class="eyebrow">Features</span>
           <h2 class="section-title">More than a step counter</h2>
           <p class="section-sub">Every walk earns territory, memories, and points. Here's what you can do.</p>
         </div>
-        <div class="features">
+        <div class="features reveal">
           <div class="card">
             <div class="icon c-green" aria-hidden="true">🐾</div>
             <h3>Mark every spot</h3>
@@ -100,12 +112,12 @@
     <!-- SPOTLIGHT -->
     <section class="spotlight">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <span class="eyebrow">Your dog's profile</span>
           <h2 class="section-title">Every walk, remembered</h2>
           <p class="section-sub">Your profile keeps it all in one place — the spots you've marked, the territory you hold, and the memories you've captured along the way.</p>
         </div>
-        <ul class="ticks ticks-center">
+        <ul class="ticks ticks-center reveal">
           <li>Health, territories, and walk history at a glance</li>
           <li>A photo gallery of every walk you've shared</li>
           <li>Likes, comments, and views on each post</li>
@@ -116,7 +128,7 @@
     <!-- FINAL CTA -->
     <section id="get" class="cta-band">
       <div class="container">
-        <div class="inner">
+        <div class="inner reveal">
           <h2>Ready to claim your turf?</h2>
           <p>PottyMap is coming soon to iOS. Got a question in the meantime? We'd love to hear from you.</p>
           <a class="btn btn-ghost" href="support.html">Get in touch</a>
@@ -126,13 +138,25 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <span>© 2026 PottyMap</span>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="support.html">Support</a>
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <img class="logo-mark" src="images/logo.png" alt="" aria-hidden="true" />
+          PottyMap
+        </a>
+        <p class="footer-tag">Claim the neighborhood, one walk at a time.</p>
       </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html#features">Features</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 PottyMap</span>
+      <span class="footer-made">Made for dogs &amp; their humans 🐾</span>
     </div>
   </footer>
+  <script src="main.js" defer></script>
 </body>
 </html>
